@@ -1,13 +1,14 @@
 [tool.poetry]
 name = "kafka4beginners-stephane-maarek"
 version = "0.1.0"
-description = ""
+description = "project to follow udemy's course, adapting it to python"
 authors = ["alex carvalho <alex.carvaho.data@gmail.com>"]
 readme = "README.md"
 packages = [{include = "kafka4beginners_stephane_maarek"}]
 
 [tool.poetry.dependencies]
 python = "^3.10"
+confluent-kafka = "^1.9.2"
 
 
 [build-system]
