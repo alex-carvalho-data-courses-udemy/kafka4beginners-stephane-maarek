@@ -24,7 +24,7 @@ def producer_callback(kafka_error: KafkaError, message: Message) -> None:
         logging.error(f'kafka_error.code: {kafka_error.code()}')
         logging.error(f'kafka_error.fatal: {kafka_error.fatal()}')
         logging.error(f'kafka_error.name: {kafka_error.name()}')
-        logging.error(f'kafka_error.retriebla: {kafka_error.retriable()}')
+        logging.error(f'kafka_error.retriable: {kafka_error.retriable()}')
         logging.error(f'kafka_error.txn_requires_abort: '
                       f'{kafka_error.txn_requires_abort()}')
         logging.error(f'message.error: {message.error()}')
