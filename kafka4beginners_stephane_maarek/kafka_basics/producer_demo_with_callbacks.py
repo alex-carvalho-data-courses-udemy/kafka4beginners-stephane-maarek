@@ -4,12 +4,6 @@ from confluent_kafka import KafkaError, Message, SerializingProducer
 from confluent_kafka.serialization import StringSerializer
 from datetime import datetime
 
-'''
-Command line to create the kafka topic 
-once allow.auto.create.topics parameter is set to False:
-
-kafka-topics.sh --bootstrap-server localhost:19092 --topic demo_python --create --partitions 3 --replication-factor 2
-'''
 
 TOPIC = 'demo_python'
 

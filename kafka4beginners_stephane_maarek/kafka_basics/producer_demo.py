@@ -20,7 +20,8 @@ class ProducerDemo:
         config = {
             'bootstrap.servers': 'localhost:19092',
             'key.serializer': StringSerializer(),
-            'value.serializer': StringSerializer()
+            'value.serializer': StringSerializer(),
+            'allow.auto.create.topics': False
         }
 
         return SerializingProducer(config)
@@ -38,7 +39,7 @@ class ProducerDemo:
 
 
 if __name__ == '__main__':
-    TOPIC_NAME = 'demo_java'
+    TOPIC_NAME = 'demo_python'
 
     producer = ProducerDemo()
 

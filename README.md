@@ -184,6 +184,10 @@ apply terraform infrastructure
 terraform apply
 ```
 
+## Kafka cli commands ##
+
+[kafka cli commands](KAFKA_COMMANDS.md) used in this tutorial.  
+
 ## Who do I talk to? ##
 
 ### Repo owner or admin
